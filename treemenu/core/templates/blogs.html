@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Blogs{% endblock %}
+
+{% block content %}
+{% load custom_tags %}
+<body>
+    <div>
+        <div>Hello!</div>
+        <div>This is your Blogs page!</div>
+
+        {% draw_menu request 'default' %}
+    </div>
+</body>
+{% endblock %}

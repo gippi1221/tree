@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% load custom_tags %}
+<body>
+    <div>
+        <div>Hello!</div>
+        <div>This is your Home page!</div>
+
+        {% draw_menu request 'default' %}
+
+        {% draw_menu request 'test' %}
+
+    </div>
+</body>
+{% endblock %}
